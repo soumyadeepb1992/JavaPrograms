@@ -1,0 +1,30 @@
+package com.java.programs;
+
+import java.math.BigDecimal;
+import java.math.BigInteger;
+
+public class BigNumbers {
+
+	public static void main(String[] args) {
+		
+		BigInteger n1 = new BigInteger("13122343243435345475948547958378945793485353988");
+		BigInteger n2 = new BigInteger("453254543454531312234324343534547594854795837852345");
+		
+		BigInteger sum = n1.add(n2);
+		System.out.println(sum);
+		//453267665797774747579800292082505973800589323206333
+		
+		BigInteger mul = n1.multiply(n2);
+		System.out.println(mul);
+		//5947761695856941157776064028897783455731990531950540025309721084239083974828149733762022000901860
+		
+		BigDecimal d1 = new BigDecimal("411342353452453543545454543543524.532454354353534553453534");
+		BigDecimal d2 = new BigDecimal("2314324123242353543545454543543524.532454354353534553432413413423");
+		BigDecimal sumDec = d1.add(d2);
+		System.out.println(sumDec);
+		//2725666476694807087090909087087049.064908708707069106885947413423
+
+
+	}
+
+}
